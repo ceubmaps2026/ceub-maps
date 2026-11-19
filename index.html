@@ -31,6 +31,7 @@ button{font:inherit;cursor:pointer;min-height:2.75rem}
 .bt[aria-pressed="true"]{background:var(--amar);color:var(--on-amar);border-color:var(--amar)}
 main{max-width:76rem;margin:0 auto;padding:1rem;display:grid;gap:1rem;grid-template-columns:minmax(0,1fr)}
 @media (min-width:60rem){main{grid-template-columns:23rem minmax(0,1fr);align-items:start}}
+@media (max-width:59.99rem){main>.col{display:contents}.col>section:nth-child(1){order:1}main>section{order:2}.col>section:nth-child(2){order:3}.col>section:nth-child(3){order:4}.col>section:nth-child(4){order:5}.col>section:nth-child(5){order:6}}
 .col{display:grid;gap:1rem}
 .card{background:var(--surface);border:2px solid var(--line);border-left:6px solid var(--mag);border-radius:1rem;padding:1.1rem;box-shadow:0 4px 16px rgba(102,44,146,.08)}
 .card.esc{background:linear-gradient(160deg,var(--roxo),var(--roxo2));color:#fff;border-color:var(--roxo2)}
@@ -131,7 +132,7 @@ footer{max-width:76rem;margin:0 auto;padding:0 1rem 1.5rem;color:var(--muted);fo
 <a class="skip" href="#origem">Ir para a rota</a>
 <header>
   <div class="marca">
-    <div class="logo" aria-hidden="true">⌖</div>
+    <div class="logo" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><ellipse cx="16" cy="28.4" rx="6" ry="1.6" fill="currentColor" opacity=".22"/><path d="M16 2.5c-5.8 0-10 4.3-10 9.8 0 6.9 8 14.4 9.2 15.5a1.1 1.1 0 0 0 1.6 0C18 26.700 26 19.200 26 12.300c0-5.500-4.200-9.800-10-9.800z" fill="currentColor"/><circle cx="16" cy="12.200" r="5" fill="#fff"/><circle cx="16" cy="12.200" r="2.300" fill="#C2007E"/></svg></div>
     <div>
       <h1>CEUB <span>Maps</span><span class="selo" style="color:#fff">ACESSIBILIDADE</span></h1>
       <p class="sub">Navegação acessível e eficiente para o campus</p>
